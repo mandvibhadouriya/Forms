@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+    <form action="#" >
+        <h1 class="f1">PaymentForm</h1>
+        <h2>ContactInformation</h2>
+        <p>Name :- <input type="text" name="name" id="name" required placeholder="Manu"></p>
+        <p>
+            <fieldset>
+                <legend>Gender :-</legend>
+                Male<input type="radio" name="Gender" id="male">  Female<input type="radio" name="Gender" id="female">  Other<input type="radio" name="Gender" id="other">
+        </fieldset></p><br>
+        <p> Address :- <br>
+             <textarea placeholder="Enter your address" name="addrs" id="" cols="100" rows="10" ></textarea></p>
+        
+        <p>Email :- <input type="email" name="email" id="email" required  placeholder="abc@gmail.com"></p> 
+        <p>PinCode :- <input type="number" name="pin" id="pin" required placeholder="1121212"></p>
+        <!-- <p>AadharCard :- <input type="file" name="pic" id="pic" required placeholder="111 111 111"></p> -->
+        <h2>PaymentInformation</h2>
+        <p>CardType :- 
+            <select name="type" id="type" required >
+            <option value="">--select a card type--</option>
+            <option value="RuPay">RuPay</option>
+            <option value="PhonePay">PhonePay</option>
+            <option value="Visa">Visa</option>
+            <option value="Paytm">Paytm</option>
+            <option value="UPI">UPI</option>
+        </select></p>
+        <p>CardNumber :- <input type="number" name="number" id="number" required placeholder="1111111"></p>
+        <p>ExpiryDate :- <input type="date" name="expire" id="expire" required placeholder="21-12-2021" ></p>
+        <p>CVV :- <input type="password" name="CVV" id="CVV" required placeholder="121212212" ></p>
+        <input type="submit" value="PayNow"><br><br><input type="reset" value="Reset">
+    </form>
+</div>
+    
+</body>
+</html>
